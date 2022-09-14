@@ -44,6 +44,7 @@ for (int i = 0; i < array.GetLength(0); i++)
         indexMinRow = i;
     }
 }
+
 Console.WriteLine("Наименьшая сумма элементов ====> " + minRowSum);
 Console.WriteLine();
 Console.WriteLine("Строка с наименьшей суммой элементов ====> " + (indexMinRow + 1));
