@@ -1,23 +1,24 @@
-﻿/* Задача 1: Задайте двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка */
-
-Console.Write("Введите количество строк: ");
+﻿/* Задача 2: Задайте две квадратные матрицы одного размера. Напишите программу, которая будет находить произведение двух матриц.
+Например, даны 2 матрицы:
+ */
+ Console.Write("Введите размерность матрицы М на М ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество столбцов: ");
-int n = Convert.ToInt32(Console.ReadLine());
 
-int[,] array = new int[m, n];
+
+int[,] array1 = new int[m, m];
+int[,] array2 = new int[m, m];
+int[,] arrayProd = new int[m, m];
 Console.WriteLine("Сформированный массив");
 
 
 Random ran = new Random();
-void FillArray(int[,] array)
+void FillArray(int[,] numArray)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < numArray.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < numArray.GetLength(1); j++)
         {
-            array[i, j] = ran.Next(1, 15);
+            numArray[i, j] = ran.Next(1, 15);
      
         }
     }
@@ -60,6 +61,3 @@ Console.WriteLine("Наименьшая сумма элементов ====> " + 
  Console.WriteLine();
 Console.WriteLine("Строка с наименьшей суммой элементов ====> " + (indexMinRow + 1));
  Console.WriteLine();
-
-
-
