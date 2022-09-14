@@ -49,5 +49,5 @@ Console.WriteLine();
 Console.WriteLine("Строка с наименьшей суммой элементов ====> " + (indexMinRow + 1));
 Console.WriteLine();
 
-
+ 
 
