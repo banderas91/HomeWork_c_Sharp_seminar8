@@ -54,5 +54,6 @@ for (int i = 0; i < array1.GetLength(0); i++)
         }
     }
 }
+
 Console.WriteLine("Результат произведения квадратных массивов");
 ShowArray(arrayProd);
