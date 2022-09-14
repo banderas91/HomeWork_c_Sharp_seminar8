@@ -17,8 +17,9 @@ void FillArray(int[,] array)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = ran.Next(1, 15);
-     
+     Console.Write(array[i, j] + " ");
         }
+        Console.WriteLine();
     }
     Console.WriteLine();
 }
